@@ -1,0 +1,118 @@
+﻿
+
+
+
+http://pragimtech.com/api/employees
+
+--where http represent protocol
+--pragimtech.com is domain
+--api : is optional
+--employees : endpoints
+
+
+                                         ** HTTp Verbs **
+     tells what to do with resource
+
+Http Verbs                                                                      CRUD Operations
+----------                                                                  ------------------------
+----------                                                                  ------------------------
+1: Post                                                                     1: Create
+2: Get                                                                      2: Read
+3: Put or Patch                                                             3: Update
+4: Delete                                                                   4: Delete
+
+
+
+
+    URL ...                                     HTTP Verb                           OutComes
+
+../api/employees                                GET                     - Gets List of Employees
+../api/employees/1                              GET (by id)             - Gets employees with Id=1
+../api/employees                                POST                    - Create new Employee
+../api/employees/1                              PUT or PATCH            - Update Employee with Id=1
+../api/employees/1                              DELETE                  - Delete Employee with Id=1
+
+
+
+Questions : difference between put vs patch
+Answer :
+        PUT : update entire objects
+        PATCH : Partial Update - only a subset of the properties
+
+
+Note : package manager console : command can see using tab button
+
+
+                        ** Repositery Patteren **
+
+
+-- Abstraction Data Access Layer 
+-- Hides the details of Data Access .
+-- Data access details are in the respectives repositery .
+-- it used interface to make doupled of DBContext class and Controller
+
+                        ** Repositery Patteren Benefits **
+
+-- Code is cleaner , easier to reuse and maintain .
+-- Loosely couple system
+-- Fake implementation for testing
+
+
+
+                    ** HttpStatus Code and Helper Method **
+
+
+  Level 200(Success)                 Level 400(Client side)                      Level 500(server side)
+
+    200 OK                              400 Bad Request                         500 Internal Server Error
+                        
+    201 Created                         401 Unauthorized                        501 Not Implemented
+    
+    204 No Content                      404 Not Found                           503 Service Unavailable
+
+
+
+
+                                ** Validation Attributes ***
+
+-- it is coming from  using System.ComponentModel.DataAnnotations;
+ Note : Following are build in Attributes
+1: Required
+2: Range
+3: MinLength
+4: MaxLength
+5: Compare
+6: RegularExpression
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+F:\Questpond\5.Web API\By kudvenkat\REST Api .NET 5\KudvenkatAPI\KudvenkatAPI.Entity\bin\Debug\net5.0\KudvenkatAPI.Entity.deps.json
+F:\Questpond\5.Web API\By kudvenkat\REST Api .NET 5\KudvenkatAPI\KudvenkatAPI.Entity\bin\Debug\net5.0\KudvenkatAPI.Entity.dll
+F:\Questpond\5.Web API\By kudvenkat\REST Api .NET 5\KudvenkatAPI\KudvenkatAPI.Entity\bin\Debug\net5.0\ref\KudvenkatAPI.Entity.dll
+F:\Questpond\5.Web API\By kudvenkat\REST Api .NET 5\KudvenkatAPI\KudvenkatAPI.Entity\bin\Debug\net5.0\KudvenkatAPI.Entity.pdb
+F:\Questpond\5.Web API\By kudvenkat\REST Api .NET 5\KudvenkatAPI\KudvenkatAPI.Entity\obj\Debug\net5.0\KudvenkatAPI.Entity.csproj.AssemblyReference.cache
+F:\Questpond\5.Web API\By kudvenkat\REST Api .NET 5\KudvenkatAPI\KudvenkatAPI.Entity\obj\Debug\net5.0\KudvenkatAPI.Entity.GeneratedMSBuildEditorConfig.editorconfig
+F:\Questpond\5.Web API\By kudvenkat\REST Api .NET 5\KudvenkatAPI\KudvenkatAPI.Entity\obj\Debug\net5.0\KudvenkatAPI.Entity.AssemblyInfoInputs.cache
+F:\Questpond\5.Web API\By kudvenkat\REST Api .NET 5\KudvenkatAPI\KudvenkatAPI.Entity\obj\Debug\net5.0\KudvenkatAPI.Entity.AssemblyInfo.cs
+F:\Questpond\5.Web API\By kudvenkat\REST Api .NET 5\KudvenkatAPI\KudvenkatAPI.Entity\obj\Debug\net5.0\KudvenkatAPI.Entity.csproj.CoreCompileInputs.cache
+F:\Questpond\5.Web API\By kudvenkat\REST Api .NET 5\KudvenkatAPI\KudvenkatAPI.Entity\obj\Debug\net5.0\KudvenkatAPI.Entity.dll
+F:\Questpond\5.Web API\By kudvenkat\REST Api .NET 5\KudvenkatAPI\KudvenkatAPI.Entity\obj\Debug\net5.0\ref\KudvenkatAPI.Entity.dll
+F:\Questpond\5.Web API\By kudvenkat\REST Api .NET 5\KudvenkatAPI\KudvenkatAPI.Entity\obj\Debug\net5.0\KudvenkatAPI.Entity.pdb
