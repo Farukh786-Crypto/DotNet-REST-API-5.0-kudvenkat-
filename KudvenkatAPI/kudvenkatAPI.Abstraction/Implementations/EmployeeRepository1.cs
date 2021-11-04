@@ -18,21 +18,33 @@ namespace kudvenkatAPI.Abstraction.Implementations
         {
             this.dataContext = dataContext;
         }
+        public async Task<IEnumerable<Employee>> GetEmployees()
+        {
+            return await dataContext.Employees.ToListAsync();
+        }
+
+        public async Task<Employee> GetEmployee(int employeeId)
+        {
+            // inside Employee class we pass Department class also so use include
+            return await dataContext.Employees.Include(a => a.Department).FirstOrDefaultAsync<Employee>(a => a.EmployeeId == employeeId);
+        }
+
+        public async Task<Employee> GetEmployeeByEmail(string email)
+        {
+            return await dataContext.Employees.FirstOrDefaultAsync(a => a.Email == email);
+        }
         public async Task<Employee> AddEmployee(Employee employee)
         {
             if(employee.Department!=null) 
             {
-                // ignoring department class 
+                // ignoring department class so u dont get error on identity set off of departmentId
                 dataContext.Entry(employee.Department).State = EntityState.Unchanged;
             }
             var result = await dataContext.Employees.AddAsync(employee);
             await dataContext.SaveChangesAsync();
             return result.Entity;
         }
-        public async Task<Employee> GetEmployee(int employeeId)
-        {
-            return await dataContext.Employees.Include(a=>a.Department).FirstOrDefaultAsync<Employee>(a=>a.EmployeeId==employeeId);
-        }
+      
         public async Task DeleteEmployee(int employeeId)
         {
             var result = await dataContext.Employees.FirstOrDefaultAsync<Employee>(a => a.EmployeeId == employeeId);
@@ -42,16 +54,6 @@ namespace kudvenkatAPI.Abstraction.Implementations
                 await dataContext.SaveChangesAsync();
             }
         }
-        public async Task<Employee> GetEmployeeByEmail(string email)
-        {
-            return await dataContext.Employees.FirstOrDefaultAsync(a=>a.Email==email); 
-        }
-
-        public async Task<IEnumerable<Employee>> GetEmployees()
-        {
-            return await dataContext.Employees.ToListAsync(); 
-        }
-
         public async Task<IEnumerable<Employee>> Search(string name, Gender? gender)
         {
             IQueryable<Employee> query = dataContext.Employees;

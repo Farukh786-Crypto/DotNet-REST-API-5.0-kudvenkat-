@@ -85,9 +85,9 @@ namespace KudvenkatAPI.Controllers
                     ModelState.AddModelError("Email","Employee email already in use");
                     return BadRequest(ModelState);
                 }
-
+                // in post we not pass empId so to add EmpId to new content
                 var createEmployee = await employeeRepository.AddEmployee(employee);
-                return CreatedAtAction(nameof(GetEmployee),
+                return CreatedAtAction(nameof(GetEmployee), // GetEmployee(id) is called
                     new { id= createEmployee.EmployeeId },createEmployee);
             }
             catch (Exception ex)

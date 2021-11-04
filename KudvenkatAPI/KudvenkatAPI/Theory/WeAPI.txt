@@ -75,7 +75,7 @@ Note : package manager console : command can see using tab button All Command Fo
 
                                 ** Validation Attributes ***
 
--- it is coming from  using System.ComponentModel.DataAnnotations;
+-- it is coming from using System.ComponentModel.DataAnnotations;
  Note : Following are build in Attributes
 1: Required
 2: Range
