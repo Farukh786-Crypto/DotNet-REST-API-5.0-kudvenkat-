@@ -11,7 +11,7 @@ http://pragimtech.com/api/employees
 
 
                                          ** HTTp Verbs **
-     tells what to do with resource
+     - tells what to do with resource
 
 Http Verbs                                                                      CRUD Operations
 ----------                                                                  ------------------------
@@ -40,7 +40,7 @@ Answer :
         PATCH : Partial Update - only a subset of the properties
 
 
-Note : package manager console : command can see using tab button
+Note : package manager console : command can see using tab button All Command Found
 
 
                         ** Repositery Patteren **
@@ -49,7 +49,7 @@ Note : package manager console : command can see using tab button
 -- Abstraction Data Access Layer 
 -- Hides the details of Data Access .
 -- Data access details are in the respectives repositery .
--- it used interface to make doupled of DBContext class and Controller
+-- it used interface to make docupled of DBContext class and Controller
 
                         ** Repositery Patteren Benefits **
 
